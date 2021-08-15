@@ -16,6 +16,10 @@ Data is being extracted using an API provided by Spotify, API is accessible with
 Source: https://api.spotify.com/v1/me/player/recently-played
 example of API call using requests library requests.get("https://api.spotify.com/v1/me/player/recently-played?after={time}".format(time=yesterday_unix_timestamp), headers = headers)
 
+### Dataframe
+
+![Pandas Dataframe](pandas_scrnshot.JPG)
+
 ### Transform:
 output of API call get stored in a JSON object. We are storing relevant data from json file to list and creating a dictionary. we are then converting dictionary to pandas dataframe.
 
